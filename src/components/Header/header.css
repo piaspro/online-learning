@@ -1,0 +1,29 @@
+.Header img{
+    height: 70px;
+    width: 320px;
+}
+.Header nav {
+    background-color: #3d5860b6;
+    line-height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+nav a:hover{
+    background-color: #f25525;
+    text-decoration: none;
+    color: white;
+}
+.text{
+    color: white;
+    margin-right: 5px;
+}
