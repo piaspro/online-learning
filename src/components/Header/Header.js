@@ -5,6 +5,8 @@ import course from '../../images/course.png'
 import './header.css'
 
 const Header = (props) => {
+    const cost = props.count;
+    const totalCost = cost.reduce((sum, product) => sum + product.cost, 0)
     return (
         <div className='container'>
             <div className='Header'>
@@ -15,7 +17,11 @@ const Header = (props) => {
                         <a href="/Review">Review</a>
                         <a href="/Manage">Manage</a>
                     </div>
+                    <div>
+                    <h5 className="text-warning">Total Cost: <span className="text"><strong>{totalCost}</strong></span></h5>
                     <h5 className="text-warning"> <FontAwesomeIcon icon={faBell}/> Course Enrolled: <span className="text">{props.countryAdded}</span></h5>
+                    </div>
+                    
                 </nav>
             </div>
         </div>

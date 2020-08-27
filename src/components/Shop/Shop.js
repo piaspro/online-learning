@@ -14,7 +14,8 @@ const Shop = () => {
     return (
         <div>
             <div>
-                <Header countryAdded = {count.length}></Header>
+                <Header countryAdded = {count.length}
+                count = {count}></Header>
             </div>
             <div className="container">
                 <div className="row">

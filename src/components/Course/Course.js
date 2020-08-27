@@ -4,7 +4,7 @@ import { faPlusSquare } from '@fortawesome/free-solid-svg-icons'
 import './course.css'
 
 const Course = (props) => {
-    const {name, mentor, img} = props.product
+    const {name, mentor, img, cost} = props.product
     const addCourse = props.addCourse;
     return (
         <div className="col-xl-4 col-lg-6 col-md-6">
@@ -17,9 +17,10 @@ const Course = (props) => {
                     <div className="card-body text-left">
                         <h3 className="text-success"><small>Course Name:</small> <span className="text-secondary">{name}</span></h3>
                         <h6 className="text-success">Mentor: <span className="text-secondary"><strong>{mentor}</strong></span></h6>
+                        <p className="text-success">Course Fee: <span className="text-secondary"><strong >BDT {cost}</strong></span></p>
                         <button 
                         onClick={() => {addCourse(props.product)}} 
-                        type="button" className="button"><FontAwesomeIcon icon={faPlusSquare}/> Enroll Now</button>
+                        type="button" className="button"><FontAwesomeIcon icon={faPlusSquare}/> Enroll</button>
                     </div>
                 </div>
             </div>
